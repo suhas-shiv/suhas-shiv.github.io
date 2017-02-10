@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Suhas Blog</title>
+  
+  <link href="/rss.xml" rel="self"/>
+  
+  <link href="http://suhasshiv.com/"/>
+  <updated>2017-02-05T17:22:32.688Z</updated>
+  <id>http://suhasshiv.com/</id>
+  
+  <author>
+    <name>Suhas S</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Solr Installation &amp; setup</title>
+    <link href="http://suhasshiv.com/2017/02/05/Solr-Setup/"/>
+    <id>http://suhasshiv.com/2017/02/05/Solr-Setup/</id>
+    <published>2017-02-05T06:17:18.119Z</published>
+    <updated>2017-02-05T17:22:32.688Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Sitecore supports Lucene and Solr search engines. While Lucene is provided out of the box with Sitecore; Solr needs installation, setup and configuration updates. This post provides detailed documentation on Solr installation and setup.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Sitecore Search" scheme="http://suhasshiv.com/categories/Sitecore-Search/"/>
+    
+    
+      <category term="Solr" scheme="http://suhasshiv.com/tags/Solr/"/>
+    
+  </entry>
+  
+</feed>
