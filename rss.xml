@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-02-05T17:22:32.688Z</updated>
+  <updated>2017-02-13T18:25:43.975Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction to GlassMapper</title>
+    <link href="http://suhasshiv.com/2017/02/12/Glassmapper/"/>
+    <id>http://suhasshiv.com/2017/02/12/Glassmapper/</id>
+    <published>2017-02-12T04:19:37.761Z</published>
+    <updated>2017-02-13T18:25:43.975Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;What-is-an-ORM&quot;&gt;&lt;a href=&quot;#What-is-an-ORM&quot; class=&quot;headerlink&quot; title=&quot;What is an ORM?&quot;&gt;&lt;/a&gt;What is an ORM?&lt;/h3&gt;&lt;p&gt;ORM stands for Object Relational Mapping. It is a technique that lets you map objects to relational databases and vice versa. Here, the term “object” mostly means an instance of a class. Tools that make use of ORM techniques are also referred to as ORM, which stands for Object Relational Mapper. There are many such tools available in .NET like Entity Framework, NHibernate, LinqToSQL, many more. Sitecore also has some of the ORM’s to map sitecore item data to models like GlassMapper,  Synthesis, Fortis, etc. Of these available ORM’s Glassmapper is the most powerful and supported than the other ORM’s. Let’s take a deep dive into GlassMapper with the series on the Glassmapper posts.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Sitecore ORM" scheme="http://suhasshiv.com/categories/Sitecore-ORM/"/>
+    
+    
+      <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
+    
+      <category term="Sitecore ORM" scheme="http://suhasshiv.com/tags/Sitecore-ORM/"/>
+    
+  </entry>
   
   <entry>
     <title>Solr Installation &amp; setup</title>
