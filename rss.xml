@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-02-18T08:15:25.689Z</updated>
+  <updated>2017-02-18T12:31:09.479Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -16,11 +16,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mapping list type to custom type in TDS code Generation</title>
+    <link href="http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/"/>
+    <id>http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/</id>
+    <published>2017-02-18T12:24:47.247Z</published>
+    <updated>2017-02-18T12:31:09.479Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool&quot;&gt;&lt;a href=&quot;#TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool&quot; class=&quot;headerlink&quot; title=&quot;TDS is very powerful and efficient with many benefits that come along with the tool.&quot;&gt;&lt;/a&gt;TDS is very powerful and efficient with many benefits that come along with the tool.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Easy sharing of the items updates across the team&lt;/li&gt;
+&lt;li&gt;Easy updating of the items&lt;/li&gt;
+&lt;li&gt;Code Generation, classes that are comparable to sitecore items&lt;br&gt;…these are to name a few.
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+    
+      <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
+    
+      <category term="Sitecore ORM" scheme="http://suhasshiv.com/tags/Sitecore-ORM/"/>
+    
+      <category term="TDS" scheme="http://suhasshiv.com/tags/TDS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Introduction to GlassMapper with Sitecore</title>
     <link href="http://suhasshiv.com/2017/02/12/Glassmapper/"/>
     <id>http://suhasshiv.com/2017/02/12/Glassmapper/</id>
     <published>2017-02-12T04:19:37.761Z</published>
-    <updated>2017-02-18T08:15:25.689Z</updated>
+    <updated>2017-02-18T12:17:36.929Z</updated>
     
     <summary type="html">
     
@@ -28,7 +55,7 @@
     
     </summary>
     
-      <category term="Sitecore ORM" scheme="http://suhasshiv.com/categories/Sitecore-ORM/"/>
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
     
     
       <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
@@ -42,7 +69,7 @@
     <link href="http://suhasshiv.com/2017/02/05/Solr-Setup/"/>
     <id>http://suhasshiv.com/2017/02/05/Solr-Setup/</id>
     <published>2017-02-05T06:17:18.119Z</published>
-    <updated>2017-02-18T08:14:54.345Z</updated>
+    <updated>2017-02-18T12:17:24.250Z</updated>
     
     <summary type="html">
     
@@ -50,10 +77,12 @@
     
     </summary>
     
-      <category term="Sitecore Search" scheme="http://suhasshiv.com/categories/Sitecore-Search/"/>
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
     
     
       <category term="Solr" scheme="http://suhasshiv.com/tags/Solr/"/>
+    
+      <category term="Sitecore Search" scheme="http://suhasshiv.com/tags/Sitecore-Search/"/>
     
   </entry>
   

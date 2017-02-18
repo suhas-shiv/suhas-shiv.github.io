@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Mapping list type to custom type in TDS code Generation | Suhas Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="GlassmapperSitecore ORMTDS" />
+  
+  
+    <meta name="google-site-verification" content="2IBIvjuCvN4LZZqRAw_zCzbTf0wmK80J_1cTXei6180" />
+  
+  
+  
+  <meta name="description" content="TDS is very powerful and efficient with many benefits that come along with the tool.
+Easy sharing of the items updates across the team
+Easy updating of the items
+Code Generation, classes that are comp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mapping list type to custom type in TDS code Generation">
+<meta property="og:url" content="http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/index.html">
+<meta property="og:site_name" content="Suhas Blog">
+<meta property="og:description" content="TDS is very powerful and efficient with many benefits that come along with the tool.
+Easy sharing of the items updates across the team
+Easy updating of the items
+Code Generation, classes that are comp">
+<meta property="og:image" content="http://suhasshiv.com/Images/Glass-Custom/Custom-Category.jpg">
+<meta property="og:image" content="http://suhasshiv.com/Images/Glass-Custom/Custom-News.jpg">
+<meta property="og:image" content="http://suhasshiv.com/Images/Glass-Custom/Custom-News-List.jpg">
+<meta property="og:image" content="http://suhasshiv.com/Images/Glass-Custom/Category-Type.jpg">
+<meta property="og:image" content="http://suhasshiv.com/Images/Glass-Custom/News-Type.jpg">
+<meta property="og:updated_time" content="2017-02-18T12:31:09.479Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mapping list type to custom type in TDS code Generation">
+<meta name="twitter:description" content="TDS is very powerful and efficient with many benefits that come along with the tool.
+Easy sharing of the items updates across the team
+Easy updating of the items
+Code Generation, classes that are comp">
+<meta name="twitter:image" content="http://suhasshiv.com/Images/Glass-Custom/Custom-Category.jpg">
+<meta property="fb:app_id" content="246516525800444">
+  
+    <link rel="alternate" href="/rss.xml" title="Suhas Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/suhas-favicon-red.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="50px" height="50px" alt="Hike News" src=" /css/images/Suhas-logo-red.png">
+                Suhas Blog
+              </a>
+            
+          </h1>
+
+          
+            <div class="site-description">My Experiments with Tech Blogs</div>
+                   
+
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/contact">contact</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+
+
+  <div id="container">
+    <div id="wrap">
+
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-TDS-Glassmapper-CustomTypes" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Mapping list type to custom type in TDS code Generation
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/02/18/TDS-Glassmapper-CustomTypes/" class="article-date">
+	  <time datetime="2017-02-18T12:24:47.247Z" itemprop="datePublished">February 18, 2017</time>
+	</a>
+	<div
+	class="fb-like"
+	data-layout="button"
+	data-action="like"
+	data-size="small"
+	data-show-faces="false"
+	data-share="false"></div>
+	<!--<div
+ class="fb-like"
+ data-share="false"
+ data-width="450"
+ data-show-faces="false">
+ </div>-->
+	<div class="addthis_inline_share_toolbox"></div>
+<!--<script type="IN/Share" data-counter="right"></script>
+<a class="twitter-share-button"  href="https://twitter.com/intent/tweet">Tweet</a>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>-->
+
+
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool"><a href="#TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool" class="headerlink" title="TDS is very powerful and efficient with many benefits that come along with the tool."></a>TDS is very powerful and efficient with many benefits that come along with the tool.</h3><ul>
+<li>Easy sharing of the items updates across the team</li>
+<li>Easy updating of the items</li>
+<li>Code Generation, classes that are comparable to sitecore items<br>…these are to name a few.<a id="more"></a>
+<h3 id="Code-Generation-is-great-but-how-does-it-work-with-non-native-types"><a href="#Code-Generation-is-great-but-how-does-it-work-with-non-native-types" class="headerlink" title="Code Generation is great, but how does it work with non-native types"></a>Code Generation is great, but how does it work with non-native types</h3></li>
+<li>Thinking of code generation, it reduces a additional overhead of implementing POCO classes using GlassMapper.</li>
+<li>TDS generates the code for the sitecore items, templates and so on.</li>
+<li>When TDS generates classes for templates, basic fields like Single Line Text, Multi-Line Text, Rich Text are mapped to string type (which a native .net datatype). For fields like Image, TDS maps them to GlassMapper datatype of Image.</li>
+<li><strong>What about the Multilist, Droplink, Droptree, Treelist. These are the fields, which have will referencing to Template items within sitecore most often? Let’s try exploring the problem and understanding solution by looking at a Scenario</strong></li>
+</ul>
+<h3 id="Scenario"><a href="#Scenario" class="headerlink" title="Scenario"></a>Scenario</h3><ul>
+<li>News Category template with the following fields<ul>
+<li><strong>News Category</strong><ul>
+<li>Title<br><img src="/Images/Glass-Custom/Custom-Category.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>News template have the following fields. News item is associated to a News Category via droplink.<ul>
+<li><strong>News</strong><ul>
+<li>Title - Single Line Text</li>
+<li>Image - Image</li>
+<li>Description - Multi-Line Text</li>
+<li>News Category - DropLink - Datasource - News Category item<br><img src="/Images/Glass-Custom/Custom-News.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>News List have the following fields. News Listing contains the list of news items via Multilist.</p>
+<ul>
+<li><strong>News List</strong><ul>
+<li>Title - Single Line Text</li>
+<li>News Listing - Multilist<br><img src="/Images/Glass-Custom/Custom-News-List.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Let’s Sync TDS with sitecore and add newly created items to TDS projects. The TDSModel class is updated as well.<br><strong>News Category</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">[SitecoreType(TemplateId=INews_CategoryConstants.TemplateIdString)] //, Cachable = true</div><div class="line">	public partial class News_Category  : GlassBase, INews_Category</div><div class="line">	&#123;</div><div class="line"></div><div class="line">						/// &lt;summary&gt;</div><div class="line">				/// The Title field.</div><div class="line">				/// &lt;para&gt;&lt;/para&gt;</div><div class="line">				/// &lt;para&gt;Field Type: Single-Line Text&lt;/para&gt;		</div><div class="line">				/// &lt;para&gt;Field ID: ea89d506-af2b-405f-922b-547f46b0c842&lt;/para&gt;</div><div class="line">				/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">				/// &lt;/summary&gt;</div><div class="line">				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">				[SitecoreField(INews_CategoryConstants.TitleFieldName)]</div><div class="line">				public virtual string Title  &#123;get; set;&#125;</div><div class="line"></div><div class="line"></div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<p><strong>News</strong></p>
+<ul>
+<li>Below we see the properties are generated for the sitecore template fields. Glass has casted single line and Multi-Line fields to string type, Image to Image type. But the Droplink is a field with custom Datasource, hence it is unable to map it to the custom type field. We’ll see the possible solutions in a short while.<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"> [SitecoreType(TemplateId=INewsConstants.TemplateIdString)] //, Cachable = true</div><div class="line">public partial class News  : GlassBase, INews</div><div class="line">&#123;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Detail field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Multi-Line Text&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 7f288512-4c92-4375-9c8c-7d34af7af626&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.DetailFieldName)]</div><div class="line">			public virtual string Detail  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Image field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Image&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 14bc9e87-31b4-422a-8e70-071891b5a83a&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.ImageFieldName)]</div><div class="line">			public virtual Image Image  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The News Category field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Droplink&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 999225be-7b18-40bf-a184-c7e010234966&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.News_CategoryFieldName)]</div><div class="line">			public virtual Guid News_Category  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Title field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Single-Line Text&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 554e22bd-97f7-4dfd-96ba-7f39adc74006&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.TitleFieldName)]</div><div class="line">			public virtual string Title  &#123;get; set;&#125;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>News List</strong></p>
+<ul>
+<li>Glass has casted single line and Multi-Line fields to string type, Image to Image type. But the multilist is a field with custom Datasource pointing to News items, hence it is unable to map it to the custom type field. We’ll see the possible solutions in a short while.<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"> public partial class News_List  : GlassBase, INews_List</div><div class="line">&#123;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The News Listing field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Multilist&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 54db0411-de8b-4e51-b529-93af5929a395&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INews_ListConstants.News_ListingsFieldName)]</div><div class="line">			public virtual IEnumerable&lt;Guid&gt; News_Listings  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Title field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Single-Line Text&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: d0237971-adf0-4eb0-990a-b3fbd457d9e4&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INews_ListConstants.TitleFieldName)]</div><div class="line">			public virtual string Title  &#123;get; set;&#125;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Solutions"><a href="#Solutions" class="headerlink" title="Solutions"></a>Solutions</h3><p>There are 2 possible solutions. One is using TDS and second by extending Glassmapper class. Let’s take a look both of them.</p>
+<h4 id="Solution-1-Using-TDS"><a href="#Solution-1-Using-TDS" class="headerlink" title="Solution 1 - Using TDS"></a><strong>Solution 1 - Using TDS</strong></h4><p>  We can update properties of the field to change the type of the fields to type that is desired.</p>
+<ul>
+<li><p>As in the above scenario, on the News template the type of the property “News_Category” should be “News_Category”. This can be done by going to the property of the field “News_Category” in TDS and updating the Custom Data with “type=DMS.Models.INews_Category” (where DMS.Models is the namespace). Now regenerate the code on TDS project. The type of the News_Category is updated.<br><img src="/Images/Glass-Custom/Category-Type.jpg" alt=""></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"> [SitecoreType(TemplateId=INewsConstants.TemplateIdString)] //, Cachable = true</div><div class="line">public partial class News  : GlassBase, INews</div><div class="line">&#123;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Detail field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Multi-Line Text&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 7f288512-4c92-4375-9c8c-7d34af7af626&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.DetailFieldName)]</div><div class="line">			public virtual string Detail  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Image field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Image&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 14bc9e87-31b4-422a-8e70-071891b5a83a&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.ImageFieldName)]</div><div class="line">			public virtual Image Image  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The News Category field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Droplink&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 999225be-7b18-40bf-a184-c7e010234966&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: type=DMS.Models.INews_Category&lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.News_CategoryFieldName)]</div><div class="line">			public virtual DMS.Models.INews_Category News_Category  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Title field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Single-Line Text&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 554e22bd-97f7-4dfd-96ba-7f39adc74006&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INewsConstants.TitleFieldName)]</div><div class="line">			public virtual string Title  &#123;get; set;&#125;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>For updating the IEnumerable, go on the properties of the field on the TDS project. Update Custom Data with “generic=DMS.Models.INews” and Regenerate code.<br><img src="/Images/Glass-Custom/News-Type.jpg" alt=""></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"> [SitecoreType(TemplateId=INews_ListConstants.TemplateIdString)] //, Cachable = true</div><div class="line">public partial class News_List  : GlassBase, INews_List</div><div class="line">&#123;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The News Listing field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Multilist&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: 54db0411-de8b-4e51-b529-93af5929a395&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: generic=DMS.Models.INews&lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INews_ListConstants.News_ListingsFieldName)]</div><div class="line">			public virtual IEnumerable&lt;DMS.Models.INews&gt; News_Listings  &#123;get; set;&#125;</div><div class="line"></div><div class="line">					/// &lt;summary&gt;</div><div class="line">			/// The Title field.</div><div class="line">			/// &lt;para&gt;&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Field Type: Single-Line Text&lt;/para&gt;		</div><div class="line">			/// &lt;para&gt;Field ID: d0237971-adf0-4eb0-990a-b3fbd457d9e4&lt;/para&gt;</div><div class="line">			/// &lt;para&gt;Custom Data: &lt;/para&gt;</div><div class="line">			/// &lt;/summary&gt;</div><div class="line">			[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]</div><div class="line">			[SitecoreField(INews_ListConstants.TitleFieldName)]</div><div class="line">			public virtual string Title  &#123;get; set;&#125;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Now you can directly use the TDS generated classes, without having to fetch the items based on item id.</p>
+</li>
+</ul>
+<h4 id="Solution-2-Extending-Glassmapper-class"><a href="#Solution-2-Extending-Glassmapper-class" class="headerlink" title="Solution 2 - Extending Glassmapper class"></a><strong>Solution 2 - Extending Glassmapper class</strong></h4><p>  In this solution, we will be extending the partial classes generated.</p>
+<ul>
+<li><p>For the News class, we have the News Category which is of Guid type. Extend the News class with a partial class and create a custom property and add the attribute to map it to. Make sure namespace is same as your TDSModel.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> Glass.Mapper.Sc.Configuration.Attributes;</div><div class="line"><span class="keyword">namespace</span> <span class="title">DMS.Models</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">News</span></div><div class="line">    &#123;</div><div class="line">        [SitecoreField(INewsConstants.News_CategoryFieldName)]</div><div class="line">        <span class="keyword">public</span> <span class="keyword">virtual</span> News_Category CustomNewsCategory &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>For the News Listing class, we have the News which is of IEnumerable<guid> type. Extend the News_Listing class with a partial class and create a custom property and add the attribute to map it to.</guid></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> System.Collections.Generic;</div><div class="line"><span class="keyword">using</span> Glass.Mapper.Sc.Configuration.Attributes;</div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">DMS.Models</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">News_List</span></div><div class="line">    &#123;</div><div class="line">        [SitecoreField(INews_ListConstants.News_ListingsFieldName)]</div><div class="line">        <span class="keyword">public</span> <span class="keyword">virtual</span> IEnumerable&lt;INews&gt; NewsList &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>Now thinking of which is a better solution from the implementation perspective. First solution gives you easier approach to update the type right out of TDS. Second solution is gives you the flexibility to do operations on the properties. Also, for mapping the children items, second solution more feasible. So based on the implementation needed, you can follow either of the approaches which best suits your need.</li>
+</ul>
+<p>Please feel free to drop your suggestions, questions, comments, or request a topic for a post on <a href="http://suhasshiv/contact" target="_blank" rel="external">Contact</a> page.</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Weekend-Walkthrough/">Weekend Walkthrough</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Glassmapper/">Glassmapper</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sitecore-ORM/">Sitecore ORM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TDS/">TDS</a></li></ul>
+
+      
+        
+          
+	<section id="comments" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'suhasshiv';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+        
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/12/Glassmapper/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Introduction to GlassMapper with Sitecore</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool"><span class="nav-number">1.</span> <span class="nav-text">TDS is very powerful and efficient with many benefits that come along with the tool.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-Generation-is-great-but-how-does-it-work-with-non-native-types"><span class="nav-number">2.</span> <span class="nav-text">Code Generation is great, but how does it work with non-native types</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Scenario"><span class="nav-number">3.</span> <span class="nav-text">Scenario</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solutions"><span class="nav-number">4.</span> <span class="nav-text">Solutions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Solution-1-Using-TDS"><span class="nav-number">4.1.</span> <span class="nav-text">Solution 1 - Using TDS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Solution-2-Extending-Glassmapper-class"><span class="nav-number">4.2.</span> <span class="nav-text">Solution 2 - Extending Glassmapper class</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2017 Suhas Blog All Rights Reserved.
+      </div>
+      <div class="site-credit">
+        Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="/contact" class="mobile-nav-link">Contact</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-90935450-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+<!-- facebook_sdk -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{{ theme.facebook_sdk.app_id }}',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- End facebook_sdk -->
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-589dad0d37a15437"></script> 
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
