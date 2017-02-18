@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-02-18T12:31:09.479Z</updated>
+  <updated>2017-02-18T19:18:39.261Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sitecore Taxonomy</title>
+    <link href="http://suhasshiv.com/2017/02/19/Sitecore-Taxonomy/"/>
+    <id>http://suhasshiv.com/2017/02/19/Sitecore-Taxonomy/</id>
+    <published>2017-02-18T19:17:02.603Z</published>
+    <updated>2017-02-18T19:18:39.261Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;What-is-Taxonomy&quot;&gt;&lt;a href=&quot;#What-is-Taxonomy&quot; class=&quot;headerlink&quot; title=&quot;What is Taxonomy?&quot;&gt;&lt;/a&gt;What is Taxonomy?&lt;/h3&gt;&lt;p&gt;Taxonomy is a categorized structure that can be used to identify and organize information in Sitecore. Taxonomy can be used to classify all of marketing activities such as campaigns, goals, and events. Taxonomy tags can be applied on these items.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+    
+      <category term="Taxonomy" scheme="http://suhasshiv.com/tags/Taxonomy/"/>
+    
+      <category term="Channel" scheme="http://suhasshiv.com/tags/Channel/"/>
+    
+      <category term="Campaign" scheme="http://suhasshiv.com/tags/Campaign/"/>
+    
+  </entry>
   
   <entry>
     <title>Mapping list type to custom type in TDS code Generation</title>
