@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-02-18T19:18:39.261Z</updated>
+  <updated>2017-02-25T11:45:57.104Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Sitecore Taxonomy</title>
     <link href="http://suhasshiv.com/2017/02/19/Sitecore-Taxonomy/"/>
     <id>http://suhasshiv.com/2017/02/19/Sitecore-Taxonomy/</id>
-    <published>2017-02-18T19:17:02.603Z</published>
-    <updated>2017-02-18T19:18:39.261Z</updated>
+    <published>2017-02-19T05:57:55.832Z</published>
+    <updated>2017-02-25T11:45:57.104Z</updated>
     
     <summary type="html">
     
@@ -30,10 +30,42 @@
     
       <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
     
+      <category term="Sitecore Experience Marketing" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/Sitecore-Experience-Marketing/"/>
+    
     
       <category term="Taxonomy" scheme="http://suhasshiv.com/tags/Taxonomy/"/>
     
       <category term="Channel" scheme="http://suhasshiv.com/tags/Channel/"/>
+    
+      <category term="Campaign" scheme="http://suhasshiv.com/tags/Campaign/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sitecore Campaign</title>
+    <link href="http://suhasshiv.com/2017/02/18/Sitecore-Campaigns/"/>
+    <id>http://suhasshiv.com/2017/02/18/Sitecore-Campaigns/</id>
+    <published>2017-02-18T13:52:39.061Z</published>
+    <updated>2017-02-25T11:57:40.575Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;What-is-a-Campaign&quot;&gt;&lt;a href=&quot;#What-is-a-Campaign&quot; class=&quot;headerlink&quot; title=&quot;What is a Campaign?&quot;&gt;&lt;/a&gt;What is a Campaign?&lt;/h3&gt;&lt;p&gt;A campaign is an organized effort by marketing teams designed to influence the decision making process within a specific group with the following objectives.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To get more traffic to the site.&lt;/li&gt;
+&lt;li&gt;To increase brand awareness&lt;/li&gt;
+&lt;li&gt;To improve campaign effectiveness.&lt;/li&gt;
+&lt;li&gt;At smaller levels campaigns can be tracked by revenue .&lt;/li&gt;
+&lt;li&gt;Tracking advertising based on Return On Investment.&lt;/li&gt;
+&lt;li&gt;Get contacts to perform certain actions on your website.&lt;/li&gt;
+&lt;li&gt;Referrals Contributing to a sale can be tracked.
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+      <category term="Sitecore Experience Marketing" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/Sitecore-Experience-Marketing/"/>
+    
     
       <category term="Campaign" scheme="http://suhasshiv.com/tags/Campaign/"/>
     
