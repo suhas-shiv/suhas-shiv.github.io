@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-02-26T07:56:01.900Z</updated>
+  <updated>2017-04-28T13:03:20.948Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Coveo</title>
+    <link href="http://suhasshiv.com/2017/04/28/Coveo-Setup/"/>
+    <id>http://suhasshiv.com/2017/04/28/Coveo-Setup/</id>
+    <published>2017-04-28T12:39:04.107Z</published>
+    <updated>2017-04-28T13:03:20.948Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;CES-Installation-Notes&quot;&gt;&lt;a href=&quot;#CES-Installation-Notes&quot; class=&quot;headerlink&quot; title=&quot;CES Installation Notes&quot;&gt;&lt;/a&gt;CES Installation Notes&lt;/h2&gt;&lt;p&gt;Version to be installed for sitecore 8.1&lt;br&gt;&lt;img src=&quot;/Images/Coveo/Coveo-1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Configuration-of-Accounts-while-CES-Installation&quot;&gt;&lt;a href=&quot;#Configuration-of-Accounts-while-CES-Installation&quot; class=&quot;headerlink&quot; title=&quot;Configuration of Accounts while CES Installation:&quot;&gt;&lt;/a&gt;Configuration of Accounts while CES Installation:&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;You can select your Domain account as user for indexes (A user on CES server that manages all indexes, in this case CES server is your local server)&lt;/li&gt;
+&lt;li&gt;For Rabbit MQ, you can use default guest user if you don’t have any other account.&lt;/li&gt;
+&lt;li&gt;For local purpose, admin service security is left disabled and made it available on port 80, left all the ports same since there are no conflicts locally on this port.
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+      <category term="Sitecore Experience Marketing" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/Sitecore-Experience-Marketing/"/>
+    
+    
+      <category term="Coveo" scheme="http://suhasshiv.com/tags/Coveo/"/>
+    
+  </entry>
   
   <entry>
     <title>Sitecore Offline Campaign</title>
