@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-04-28T13:03:20.948Z</updated>
+  <updated>2017-04-28T13:19:08.274Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Coveo</title>
+    <title>Coveo Setup</title>
     <link href="http://suhasshiv.com/2017/04/28/Coveo-Setup/"/>
     <id>http://suhasshiv.com/2017/04/28/Coveo-Setup/</id>
     <published>2017-04-28T12:39:04.107Z</published>
-    <updated>2017-04-28T13:03:20.948Z</updated>
+    <updated>2017-04-28T13:19:08.274Z</updated>
     
     <summary type="html">
     
@@ -34,7 +34,7 @@
     
       <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
     
-      <category term="Sitecore Experience Marketing" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/Sitecore-Experience-Marketing/"/>
+      <category term="Coveo" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/Coveo/"/>
     
     
       <category term="Coveo" scheme="http://suhasshiv.com/tags/Coveo/"/>
