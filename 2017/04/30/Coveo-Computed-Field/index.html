@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Coveo Setup | Suhas Blog</title>
+  <title>Coveo Computed Field | Suhas Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="Coveo" />
@@ -13,23 +13,17 @@
   
   
   
-  <meta name="description" content="CES Installation NotesVersion to be installed for sitecore 8.1
-Configuration of Accounts while CES Installation:
-You can select your Domain account as user for indexes (A user on CES server that manag">
+  <meta name="description" content="Computed fields allow you to index values calculated while indexing. Adding fields to an index can improve runtime performance by making data available in the index rather than requiring a visit to a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Coveo Setup">
-<meta property="og:url" content="http://suhasshiv.com/2017/04/28/Coveo-Setup/index.html">
+<meta property="og:title" content="Coveo Computed Field">
+<meta property="og:url" content="http://suhasshiv.com/2017/04/30/Coveo-Computed-Field/index.html">
 <meta property="og:site_name" content="Suhas Blog">
-<meta property="og:description" content="CES Installation NotesVersion to be installed for sitecore 8.1
-Configuration of Accounts while CES Installation:
-You can select your Domain account as user for indexes (A user on CES server that manag">
+<meta property="og:description" content="Computed fields allow you to index values calculated while indexing. Adding fields to an index can improve runtime performance by making data available in the index rather than requiring a visit to a">
 <meta property="og:image" content="http://suhasshiv.com/Images/Coveo/Coveo-Logo.jpg">
-<meta property="og:updated_time" content="2017-04-28T13:19:08.274Z">
+<meta property="og:updated_time" content="2017-05-02T09:45:51.987Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Coveo Setup">
-<meta name="twitter:description" content="CES Installation NotesVersion to be installed for sitecore 8.1
-Configuration of Accounts while CES Installation:
-You can select your Domain account as user for indexes (A user on CES server that manag">
+<meta name="twitter:title" content="Coveo Computed Field">
+<meta name="twitter:description" content="Computed fields allow you to index values calculated while indexing. Adding fields to an index can improve runtime performance by making data available in the index rather than requiring a visit to a">
 <meta name="twitter:image" content="http://suhasshiv.com/Images/Coveo/Coveo-Logo.jpg">
 <meta property="fb:app_id" content="246516525800444">
   
@@ -118,7 +112,7 @@ You can select your Domain account as user for indexes (A user on CES server tha
 
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Coveo-Setup" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-Coveo-Computed-Field" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
 
@@ -127,7 +121,7 @@ You can select your Domain account as user for indexes (A user on CES server tha
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      Coveo Setup
+      Coveo Computed Field
     </h1>
   
 
@@ -135,8 +129,8 @@ You can select your Domain account as user for indexes (A user on CES server tha
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/04/28/Coveo-Setup/" class="article-date">
-	  <time datetime="2017-04-28T12:39:04.107Z" itemprop="datePublished">April 28, 2017</time>
+	Posted on <a href="/2017/04/30/Coveo-Computed-Field/" class="article-date">
+	  <time datetime="2017-04-30T17:20:55.254Z" itemprop="datePublished">April 30, 2017</time>
 	</a>
 	<div
 	class="fb-like"
@@ -161,33 +155,21 @@ You can select your Domain account as user for indexes (A user on CES server tha
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="CES-Installation-Notes"><a href="#CES-Installation-Notes" class="headerlink" title="CES Installation Notes"></a>CES Installation Notes</h2><p>Version to be installed for sitecore 8.1<br><img src="/Images/Coveo/Coveo-1.jpg" alt=""></p>
-<h3 id="Configuration-of-Accounts-while-CES-Installation"><a href="#Configuration-of-Accounts-while-CES-Installation" class="headerlink" title="Configuration of Accounts while CES Installation:"></a>Configuration of Accounts while CES Installation:</h3><ul>
-<li>You can select your Domain account as user for indexes (A user on CES server that manages all indexes, in this case CES server is your local server)</li>
-<li>For Rabbit MQ, you can use default guest user if you don’t have any other account.</li>
-<li>For local purpose, admin service security is left disabled and made it available on port 80, left all the ports same since there are no conflicts locally on this port.<a id="more"></a>
-<img src="/Images/Coveo/Coveo-2.jpg" alt=""></li>
-</ul>
-<p>Click Next and Installation will start; it should take like about 5 -10 mins.<br><img src="/Images/Coveo/Coveo-3.jpg" alt=""></p>
-<p>Verify all Coveo Windows Services running<br><img src="/Images/Coveo/Coveo-4.jpg" alt=""></p>
-<h2 id="Coveo-Search-API-install"><a href="#Coveo-Search-API-install" class="headerlink" title="Coveo Search API install"></a>Coveo Search API install</h2><p>Download version of Coveo Search API corresponding to your CES version.<br><a href="https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+Enterprise+Search+%28CES%29+On-Premises" target="_blank" rel="external">https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+Enterprise+Search+%28CES%29+On-Premises</a><br><strong>Note - Select “This installation is part of a Sitecore Integration” option.</strong></p>
-<p>Generate a random security token – Take a note of this secrete key<br>On local, let Coveo install with its default location.   Once, installation is complete you will see below, you can choose to click finish<br><img src="/Images/Coveo/Coveo-5.jpg" alt=""></p>
-<p>All configurations and files related to Coveo Search API will be installed below –<br><img src="/Images/Coveo/Coveo-6.jpg" alt=""></p>
-<p>New service is added for search api, it will not be running because we did not set up Coveo for Sitecore yet and also config.yml should be updated in later step before this gets started.<br><img src="/Images/Coveo/Coveo-7.jpg" alt=""></p>
-<h3 id="Notes-for-Coveo-for-Sitecore-Installation-–"><a href="#Notes-for-Coveo-for-Sitecore-Installation-–" class="headerlink" title="Notes for Coveo for Sitecore Installation –"></a>Notes for Coveo for Sitecore Installation –</h3><ul>
-<li>Get the corresponding zip of package file from Coveo site for Sitecore 8.1</li>
-<li>Install the package using Installation wizard</li>
-<li><p>Follow instructions here, paying attention to below bullet points– (Ensure you select free so that you don’t have to enter license or key)<br><a href="https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+for+Sitecore" target="_blank" rel="external">https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+for+Sitecore</a></p>
+        <p>Computed fields allow you to index values calculated while indexing. Adding fields to an index can improve runtime performance by making data available in the index rather than requiring a visit to a data source, such as an item in a Sitecore database.</p>
+<p>If you want to do some manipulation before it gets added to index on any Sitecore field, you need to go with Coveo computed field to achieve the same. Below are the steps you can refer to have a computed field in Coveo index<br><a id="more"></a></p>
+<h2 id="How-to-Create-Coveo-Computed-field-for-Index"><a href="#How-to-Create-Coveo-Computed-field-for-Index" class="headerlink" title="How to Create Coveo Computed field for Index"></a>How to Create Coveo Computed field for Index</h2><ul>
+<li>In your project create a Class - <strong>ComputedField.cs</strong>; like below (here I have used indexValue as computed field for new index)<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">namespace &lt;YourProject&gt;.ComputedFields</div><div class="line">&#123;</div><div class="line">    class ComputedField : IComputedIndexField</div><div class="line">    &#123;</div><div class="line">        public object ComputeFieldValue(IIndexable indexable)</div><div class="line">        &#123;</div><div class="line">            Assert.ArgumentNotNull(indexable, "indexable");</div><div class="line">            SitecoreIndexableItem scIndexable = indexable as SitecoreIndexableItem;</div><div class="line"></div><div class="line">            if (scIndexable == null)</div><div class="line">            &#123;</div><div class="line">                Log.Warn(this + " : unsupported IIndexable type : " +</div><div class="line">                indexable.GetType(), this);</div><div class="line">                return false;</div><div class="line">            &#125;</div><div class="line">            string indexValue = null;</div><div class="line">            Item item = scIndexable;</div><div class="line"></div><div class="line">            //Compare to the template id to be indexed</div><div class="line">            if (item.TemplateID == &lt;YourTemplateId&gt;)</div><div class="line">            &#123;</div><div class="line">                indexValue = item.Fields["&lt;Your Field Name&gt;"].Value;                </div><div class="line">            &#125;</div><div class="line">            return indexValue;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public string FieldName &#123; get; set; &#125;</div><div class="line">        public string ReturnType &#123; get; set; &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>Use default values while installation for local</p>
-</li>
-<li>Select -&gt; Index only sitecore items, we don’t need to index the whole rendered html as it will be expensive and indexes will be huge, for our business requirements we would only need to index sitecore items.</li>
-<li>Check box auto rename the config files to enable Coveo.</li>
-<li>Open config.yml in C:\Program Files\Coveo Search API 8 and make sure URL and other things listed are right</li>
-<li>Restart Coveo Search API service from windows services</li>
-<li>Rebuild your indexes<br>That’s it, you should be done.  Open Coveo Diagnostics page from control panel to ensure all is well on this installation.<br>Final Diagnostics – (Control Panel -&gt; Coveo Section -&gt; Diagnostics)<br><img src="/Images/Coveo/Coveo-8.jpg" alt=""></li>
 </ul>
-<p>All should be green.<br>Build Coveo indexes in index manager. You are all set.</p>
+<ul>
+<li><p>Once you have created the computed field class, you need to update the Coveo custom config file - <strong>Coveo.SearchProvider.Custom.config</strong> as below</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">fields</span> <span class="attr">hint</span>=<span class="string">"raw:AddComputedIndexField"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">field</span> <span class="attr">fieldName</span>=<span class="string">"indexValue"</span>&gt;</span><span class="tag">&lt;<span class="name">Class</span> <span class="attr">Path</span>&gt;</span>,<span class="tag">&lt;<span class="name">Project</span> <span class="attr">DLL</span> <span class="attr">Name</span>&gt;</span><span class="tag">&lt;/<span class="name">field</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">fields</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Class Path - <code>&lt;YourProject&gt;.ComputedFields.ComputedField</code> (above example class)<br>Project DLL Name - <code>&lt;YourProject&gt;</code></p>
+</li>
+<li><p>Now all set to build the index, go ahead and start <strong>coveo_web_index</strong><br>Once index is complete, you can find the computed fields in Coveo Administration Tool.</p>
+</li>
+</ul>
+<p><strong>Note</strong>: Don’t create many computed field as it will reduce the index performance during build (it may take long time to complete), as each Sitecore item should pass through the code.</p>
 
       
     </div>
@@ -237,19 +219,10 @@ You can select your Domain account as user for indexes (A user on CES server tha
     
 <nav id="article-nav">
   
-    <a href="/2017/04/30/Coveo-Computed-Field/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Coveo Computed Field
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/26/Offline-Campaign/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/04/28/Coveo-Setup/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Sitecore Offline Campaign</div>
+      <div class="article-nav-title">Coveo Setup</div>
     </a>
   
 </nav>
@@ -263,7 +236,7 @@ You can select your Domain account as user for indexes (A user on CES server tha
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CES-Installation-Notes"><span class="nav-number">1.</span> <span class="nav-text">CES Installation Notes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configuration-of-Accounts-while-CES-Installation"><span class="nav-number">1.1.</span> <span class="nav-text">Configuration of Accounts while CES Installation:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coveo-Search-API-install"><span class="nav-number">2.</span> <span class="nav-text">Coveo Search API install</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Notes-for-Coveo-for-Sitecore-Installation-–"><span class="nav-number">2.1.</span> <span class="nav-text">Notes for Coveo for Sitecore Installation –</span></a></li></ol></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-Create-Coveo-Computed-field-for-Index"><span class="nav-number">1.</span> <span class="nav-text">How to Create Coveo Computed field for Index</span></a></li></ol>
     
     </div>
   </aside>

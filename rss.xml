@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-04-28T13:19:08.274Z</updated>
+  <updated>2017-05-02T09:45:51.987Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Coveo Computed Field</title>
+    <link href="http://suhasshiv.com/2017/04/30/Coveo-Computed-Field/"/>
+    <id>http://suhasshiv.com/2017/04/30/Coveo-Computed-Field/</id>
+    <published>2017-04-30T17:20:55.254Z</published>
+    <updated>2017-05-02T09:45:51.987Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Computed fields allow you to index values calculated while indexing. Adding fields to an index can improve runtime performance by making data available in the index rather than requiring a visit to a data source, such as an item in a Sitecore database.&lt;/p&gt;
+&lt;p&gt;If you want to do some manipulation before it gets added to index on any Sitecore field, you need to go with Coveo computed field to achieve the same. Below are the steps you can refer to have a computed field in Coveo index&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+      <category term="Coveo" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/Coveo/"/>
+    
+    
+      <category term="Coveo" scheme="http://suhasshiv.com/tags/Coveo/"/>
+    
+  </entry>
   
   <entry>
     <title>Coveo Setup</title>
