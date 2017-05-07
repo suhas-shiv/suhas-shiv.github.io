@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Coveo Setup | Suhas Blog</title>
+  <title>Coveo Searchable Field | Suhas Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="Coveo" />
@@ -13,23 +13,17 @@
   
   
   
-  <meta name="description" content="CES Installation NotesVersion to be installed for sitecore 8.1
-Configuration of Accounts while CES Installation:
-You can select your Domain account as user for indexes (A user on CES server that manag">
+  <meta name="description" content="Coveo Searchable FieldBelow are the steps to follow to make Coveo field as searchable. I have taken example of computed field (indexValue) created in my previous blog. Please refer to my previous blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Coveo Setup">
-<meta property="og:url" content="http://suhasshiv.com/2017/04/28/Coveo-Setup/index.html">
+<meta property="og:title" content="Coveo Searchable Field">
+<meta property="og:url" content="http://suhasshiv.com/2017/05/07/Searchable-Field-Coveo/index.html">
 <meta property="og:site_name" content="Suhas Blog">
-<meta property="og:description" content="CES Installation NotesVersion to be installed for sitecore 8.1
-Configuration of Accounts while CES Installation:
-You can select your Domain account as user for indexes (A user on CES server that manag">
+<meta property="og:description" content="Coveo Searchable FieldBelow are the steps to follow to make Coveo field as searchable. I have taken example of computed field (indexValue) created in my previous blog. Please refer to my previous blog">
 <meta property="og:image" content="http://suhasshiv.com/Images/Coveo/Coveo-Logo.jpg">
-<meta property="og:updated_time" content="2017-05-07T17:35:49.690Z">
+<meta property="og:updated_time" content="2017-05-07T17:36:53.525Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Coveo Setup">
-<meta name="twitter:description" content="CES Installation NotesVersion to be installed for sitecore 8.1
-Configuration of Accounts while CES Installation:
-You can select your Domain account as user for indexes (A user on CES server that manag">
+<meta name="twitter:title" content="Coveo Searchable Field">
+<meta name="twitter:description" content="Coveo Searchable FieldBelow are the steps to follow to make Coveo field as searchable. I have taken example of computed field (indexValue) created in my previous blog. Please refer to my previous blog">
 <meta name="twitter:image" content="http://suhasshiv.com/Images/Coveo/Coveo-Logo.jpg">
 <meta property="fb:app_id" content="246516525800444">
   
@@ -118,13 +112,13 @@ You can select your Domain account as user for indexes (A user on CES server tha
 
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Coveo-Setup" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-Searchable-Field-Coveo" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/Images/Coveo/Coveo-Logo.jpg" rel="gallery_cj21ulxzh0000iomkoudx6uf7">
+      <a class="article-gallery-img fancybox" href="/Images/Coveo/Coveo-Logo.jpg" rel="gallery_cj2ez827d0000icmkedssri3j">
         <img src="/Images/Coveo/Coveo-Logo.jpg" itemprop="image">
       </a>
     
@@ -137,7 +131,7 @@ You can select your Domain account as user for indexes (A user on CES server tha
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      Coveo Setup
+      Coveo Searchable Field
     </h1>
   
 
@@ -145,8 +139,8 @@ You can select your Domain account as user for indexes (A user on CES server tha
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/04/28/Coveo-Setup/" class="article-date">
-	  <time datetime="2017-04-28T12:39:04.107Z" itemprop="datePublished">April 28, 2017</time>
+	Posted on <a href="/2017/05/07/Searchable-Field-Coveo/" class="article-date">
+	  <time datetime="2017-05-07T17:14:53.478Z" itemprop="datePublished">May 7, 2017</time>
 	</a>
 	<div
 	class="fb-like"
@@ -171,34 +165,23 @@ You can select your Domain account as user for indexes (A user on CES server tha
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="CES-Installation-Notes"><a href="#CES-Installation-Notes" class="headerlink" title="CES Installation Notes"></a>CES Installation Notes</h2><p>Version to be installed for sitecore 8.1<br><img src="/Images/Coveo/Coveo-1.jpg" alt=""></p>
-<h3 id="Configuration-of-Accounts-while-CES-Installation"><a href="#Configuration-of-Accounts-while-CES-Installation" class="headerlink" title="Configuration of Accounts while CES Installation:"></a>Configuration of Accounts while CES Installation:</h3><ul>
-<li>You can select your Domain account as user for indexes (A user on CES server that manages all indexes, in this case CES server is your local server)</li>
-<li>For Rabbit MQ, you can use default guest user if you don’t have any other account.</li>
-<li>For local purpose, admin service security is left disabled and made it available on port 80, left all the ports same since there are no conflicts locally on this port.<a id="more"></a>
-<img src="/Images/Coveo/Coveo-2.jpg" alt=""></li>
-</ul>
-<p>Click Next and Installation will start; it should take like about 5 -10 mins.<br><img src="/Images/Coveo/Coveo-3.jpg" alt=""></p>
-<p>Verify all Coveo Windows Services running<br><img src="/Images/Coveo/Coveo-4.jpg" alt=""></p>
-<h2 id="Coveo-Search-API-install"><a href="#Coveo-Search-API-install" class="headerlink" title="Coveo Search API install"></a>Coveo Search API install</h2><p>Download version of Coveo Search API corresponding to your CES version.<br><a href="https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+Enterprise+Search+%28CES%29+On-Premises" target="_blank" rel="external">https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+Enterprise+Search+%28CES%29+On-Premises</a><br><strong>Note - Select “This installation is part of a Sitecore Integration” option.</strong></p>
-<p>Generate a random security token – Take a note of this secrete key<br>On local, let Coveo install with its default location.   Once, installation is complete you will see below, you can choose to click finish<br><img src="/Images/Coveo/Coveo-5.jpg" alt=""></p>
-<p>All configurations and files related to Coveo Search API will be installed below –<br><img src="/Images/Coveo/Coveo-6.jpg" alt=""></p>
-<p>New service is added for search api, it will not be running because we did not set up Coveo for Sitecore yet and also config.yml should be updated in later step before this gets started.<br><img src="/Images/Coveo/Coveo-7.jpg" alt=""></p>
-<h3 id="Notes-for-Coveo-for-Sitecore-Installation-–"><a href="#Notes-for-Coveo-for-Sitecore-Installation-–" class="headerlink" title="Notes for Coveo for Sitecore Installation –"></a>Notes for Coveo for Sitecore Installation –</h3><ul>
-<li>Get the corresponding zip of package file from Coveo site for Sitecore 8.1</li>
-<li>Install the package using Installation wizard</li>
-<li><p>Follow instructions here, paying attention to below bullet points– (Ensure you select free so that you don’t have to enter license or key)<br><a href="https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+for+Sitecore" target="_blank" rel="external">https://developers.coveo.com/display/public/SitecoreV4/Installing+Coveo+for+Sitecore</a></p>
+        <h2 id="Coveo-Searchable-Field"><a href="#Coveo-Searchable-Field" class="headerlink" title="Coveo Searchable Field"></a>Coveo Searchable Field</h2><p>Below are the steps to follow to make Coveo field as searchable. I have taken example of computed field (indexValue) created in my previous blog. Please refer to my previous blog on Coveo Computed Field for more info.<br><a id="more"></a></p>
+<p>Following attributes are added to the <strong>Coveo.SearchProvider.Custom.config</strong> file to make any field searchable.</p>
+<ul>
+<li><p><strong>includeForFreeTextSearch</strong> attribute should be set to “True” to make a field searchable.</p>
 </li>
-<li><p>Use default values while installation for local</p>
+<li><p><strong>isFacet</strong> attribute should be set to “True” if you want this field to be facet(which can be used in Coveo facet interface)</p>
 </li>
-<li>Select -&gt; Index only sitecore items, we don’t need to index the whole rendered html as it will be expensive and indexes will be huge, for our business requirements we would only need to index sitecore items.</li>
-<li>Check box auto rename the config files to enable Coveo.</li>
-<li>Open config.yml in C:\Program Files\Coveo Search API 8 and make sure URL and other things listed are right</li>
-<li>Restart Coveo Search API service from windows services</li>
-<li>Rebuild your indexes<br>That’s it, you should be done.  Open Coveo Diagnostics page from control panel to ensure all is well on this installation.<br>Final Diagnostics – (Control Panel -&gt; Coveo Section -&gt; Diagnostics)<br><img src="/Images/Coveo/Coveo-8.jpg" alt=""></li>
 </ul>
-<p>All should be green.<br>Build Coveo indexes in index manager. You are all set.</p>
-<p>This is part-1 of the series on Coveo.<br>Please feel free to drop your suggestions, questions, comments, or request a topic for a post on <a href="http://suhasshiv/contact" target="_blank" rel="external">Contact</a> page.</p>
+<h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">--</div><div class="line"><span class="tag">&lt;<span class="name">fieldMap</span> <span class="attr">type</span>=<span class="string">"Coveo.SearchProvider.CoveoFieldMap, Coveo.SearchProvider"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">fieldNames</span> <span class="attr">hint</span>=<span class="string">"raw:AddFieldByFieldName"</span>&gt;</span></div><div class="line">    ---</div><div class="line">    <span class="tag">&lt;<span class="name">fieldType</span> <span class="attr">fieldName</span>=<span class="string">"indexValue"</span> <span class="attr">includeForFreeTextSearch</span>=<span class="string">"true"</span>    </span></div><div class="line">     <span class="attr">isFacet</span>=<span class="string">"false"</span> <span class="attr">settingType</span>=<span class="string">"Coveo.Framework.Configuration.FieldConfiguration, Coveo.Framework"</span> /&gt;</div><div class="line">    ---</div><div class="line">   <span class="tag">&lt;/<span class="name">fieldNames</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">fieldMap</span>&gt;</span></div><div class="line">--</div></pre></td></tr></table></figure>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><ul>
+<li><p>Once Free Text Search attribute is enabled for the field, Rebuild/Refresh the Coveo_Web_Index through Admin Tool.</p>
+</li>
+<li><p>Now you have the computed field and which can be searchable.</p>
+</li>
+</ul>
+<p><em>Note:</em> Free Text Search can be enabled for any field from the Coveo Admin Tool, but it will not persist longer. Once Coveo is restarted, the config changes saved from Admin Tool will be lost. Hence, it is preferred adding free text attribute to Coveo custom config file.</p>
+<p>This is part-3 of the series on Coveo.<br>Please feel free to drop your suggestions, questions, comments, or request a topic for a post on <a href="http://suhasshiv/contact" target="_blank" rel="external">Contact</a> page.</p>
 
       
     </div>
@@ -248,19 +231,10 @@ You can select your Domain account as user for indexes (A user on CES server tha
     
 <nav id="article-nav">
   
-    <a href="/2017/04/30/Coveo-Computed-Field/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Coveo Computed Field
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/26/Offline-Campaign/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/04/30/Coveo-Computed-Field/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Sitecore Offline Campaign</div>
+      <div class="article-nav-title">Coveo Computed Field</div>
     </a>
   
 </nav>
@@ -274,7 +248,7 @@ You can select your Domain account as user for indexes (A user on CES server tha
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CES-Installation-Notes"><span class="nav-number">1.</span> <span class="nav-text">CES Installation Notes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configuration-of-Accounts-while-CES-Installation"><span class="nav-number">1.1.</span> <span class="nav-text">Configuration of Accounts while CES Installation:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coveo-Search-API-install"><span class="nav-number">2.</span> <span class="nav-text">Coveo Search API install</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Notes-for-Coveo-for-Sitecore-Installation-–"><span class="nav-number">2.1.</span> <span class="nav-text">Notes for Coveo for Sitecore Installation –</span></a></li></ol></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Coveo-Searchable-Field"><span class="nav-number">1.</span> <span class="nav-text">Coveo Searchable Field</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-1"><span class="nav-number">1.1.</span> <span class="nav-text">Step 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2"><span class="nav-number">1.2.</span> <span class="nav-text">Step 2</span></a></li></ol></li></ol>
     
     </div>
   </aside>
