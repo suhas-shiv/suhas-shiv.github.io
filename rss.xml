@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-06-01T07:08:53.879Z</updated>
+  <updated>2017-06-01T07:14:43.765Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://suhasshiv.com/2017/05/14/Publish-Second-Level-Items/"/>
     <id>http://suhasshiv.com/2017/05/14/Publish-Second-Level-Items/</id>
     <published>2017-05-14T05:35:56.000Z</published>
-    <updated>2017-06-01T07:08:53.879Z</updated>
+    <updated>2017-06-01T07:14:43.765Z</updated>
     
     <summary type="html">
     
@@ -43,7 +43,7 @@
     <link href="http://suhasshiv.com/2017/05/07/Searchable-Field-Coveo/"/>
     <id>http://suhasshiv.com/2017/05/07/Searchable-Field-Coveo/</id>
     <published>2017-05-07T17:14:53.478Z</published>
-    <updated>2017-05-07T17:36:53.525Z</updated>
+    <updated>2017-06-01T07:14:51.568Z</updated>
     
     <summary type="html">
     
@@ -88,7 +88,7 @@
     <link href="http://suhasshiv.com/2017/04/28/Coveo-Setup/"/>
     <id>http://suhasshiv.com/2017/04/28/Coveo-Setup/</id>
     <published>2017-04-28T12:39:04.107Z</published>
-    <updated>2017-05-07T17:35:49.690Z</updated>
+    <updated>2017-06-01T07:14:49.926Z</updated>
     
     <summary type="html">
     
@@ -114,7 +114,7 @@
     <link href="http://suhasshiv.com/2017/02/26/Offline-Campaign/"/>
     <id>http://suhasshiv.com/2017/02/26/Offline-Campaign/</id>
     <published>2017-02-26T07:44:12.051Z</published>
-    <updated>2017-02-26T07:56:01.900Z</updated>
+    <updated>2017-06-01T07:14:48.623Z</updated>
     
     <summary type="html">
     
@@ -159,7 +159,7 @@
     <link href="http://suhasshiv.com/2017/02/19/Sitecore-Taxonomy/"/>
     <id>http://suhasshiv.com/2017/02/19/Sitecore-Taxonomy/</id>
     <published>2017-02-19T05:57:55.832Z</published>
-    <updated>2017-02-26T07:56:47.683Z</updated>
+    <updated>2017-06-01T07:14:41.615Z</updated>
     
     <summary type="html">
     
@@ -208,11 +208,33 @@
   </entry>
   
   <entry>
+    <title>Introduction to GlassMapper with Sitecore</title>
+    <link href="http://suhasshiv.com/2017/02/18/Glassmapper/"/>
+    <id>http://suhasshiv.com/2017/02/18/Glassmapper/</id>
+    <published>2017-02-18T13:52:39.078Z</published>
+    <updated>2017-06-01T07:14:53.375Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;What-is-an-ORM&quot;&gt;&lt;a href=&quot;#What-is-an-ORM&quot; class=&quot;headerlink&quot; title=&quot;What is an ORM?&quot;&gt;&lt;/a&gt;What is an ORM?&lt;/h3&gt;&lt;p&gt;ORM stands for Object Relational Mapping. It is a technique that lets you map objects to relational databases and vice versa. Here, the term “object” mostly means an instance of a class. Tools that make use of ORM techniques are also referred to as ORM, which stands for Object Relational Mapper. There are many such tools available in .NET like Entity Framework, NHibernate, LinqToSQL, many more. Sitecore also has some of the ORM’s to map sitecore item data to models like GlassMapper,  Synthesis, Fortis, etc. Of these available ORM’s Glassmapper is the most powerful and supported than the other ORM’s. Let’s take a deep dive into GlassMapper with the series on the Glassmapper posts.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+    
+      <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
+    
+      <category term="Sitecore ORM" scheme="http://suhasshiv.com/tags/Sitecore-ORM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Sitecore Campaign</title>
     <link href="http://suhasshiv.com/2017/02/18/Sitecore-Campaigns/"/>
     <id>http://suhasshiv.com/2017/02/18/Sitecore-Campaigns/</id>
     <published>2017-02-18T13:52:39.061Z</published>
-    <updated>2017-02-26T07:56:29.121Z</updated>
+    <updated>2017-06-01T07:14:46.515Z</updated>
     
     <summary type="html">
     
@@ -234,28 +256,6 @@
     
     
       <category term="Campaign" scheme="http://suhasshiv.com/tags/Campaign/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Introduction to GlassMapper with Sitecore</title>
-    <link href="http://suhasshiv.com/2017/02/12/Glassmapper/"/>
-    <id>http://suhasshiv.com/2017/02/12/Glassmapper/</id>
-    <published>2017-02-12T04:19:37.761Z</published>
-    <updated>2017-02-18T12:17:36.929Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;What-is-an-ORM&quot;&gt;&lt;a href=&quot;#What-is-an-ORM&quot; class=&quot;headerlink&quot; title=&quot;What is an ORM?&quot;&gt;&lt;/a&gt;What is an ORM?&lt;/h3&gt;&lt;p&gt;ORM stands for Object Relational Mapping. It is a technique that lets you map objects to relational databases and vice versa. Here, the term “object” mostly means an instance of a class. Tools that make use of ORM techniques are also referred to as ORM, which stands for Object Relational Mapper. There are many such tools available in .NET like Entity Framework, NHibernate, LinqToSQL, many more. Sitecore also has some of the ORM’s to map sitecore item data to models like GlassMapper,  Synthesis, Fortis, etc. Of these available ORM’s Glassmapper is the most powerful and supported than the other ORM’s. Let’s take a deep dive into GlassMapper with the series on the Glassmapper posts.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
-    
-    
-      <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
-    
-      <category term="Sitecore ORM" scheme="http://suhasshiv.com/tags/Sitecore-ORM/"/>
     
   </entry>
   
