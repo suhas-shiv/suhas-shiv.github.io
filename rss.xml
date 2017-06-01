@@ -5,7 +5,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://suhasshiv.com/"/>
-  <updated>2017-05-07T17:36:53.525Z</updated>
+  <updated>2017-06-01T07:08:53.879Z</updated>
   <id>http://suhasshiv.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Publish second level reference items - Sitecore</title>
+    <link href="http://suhasshiv.com/2017/05/14/Publish-Second-Level-Items/"/>
+    <id>http://suhasshiv.com/2017/05/14/Publish-Second-Level-Items/</id>
+    <published>2017-05-14T05:35:56.000Z</published>
+    <updated>2017-06-01T07:08:53.879Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Sitecore-publishing-modes&quot;&gt;&lt;a href=&quot;#Sitecore-publishing-modes&quot; class=&quot;headerlink&quot; title=&quot;Sitecore publishing modes&quot;&gt;&lt;/a&gt;Sitecore publishing modes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Republish – This mode will publish every item, even thought no change exists on the item. This is generally used when publishing a new site first time. This is most time consuming publishing method since it publishes all items.&lt;/li&gt;
+&lt;li&gt;Smart Publish - This mode, as the name suggest is smart enough to compare item by item in the master database with web database. Sitecore maintains revision number for each item which gets changed whenever the item gets updated. By comparing the revision number between the master and web database, it will create a list of updated items changes and will publish only those items which has updates/created/deleted. Though item by item comparison happens, it is way more faster than republish method.&lt;/li&gt;
+&lt;li&gt;Incremental Publish - In this mode, at any point of time if an item is updated, it is added to the publishing queue. Changes made through the Sitecore user interface and programmatically are both added into publishing queue and only those are considered for publishing. This mode of publishing is hence the fastest.
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+    
+      <category term="Sitecore Publish" scheme="http://suhasshiv.com/tags/Sitecore-Publish/"/>
+    
+  </entry>
   
   <entry>
     <title>Coveo Searchable Field</title>
@@ -42,7 +65,7 @@
     <link href="http://suhasshiv.com/2017/04/30/Coveo-Computed-Field/"/>
     <id>http://suhasshiv.com/2017/04/30/Coveo-Computed-Field/</id>
     <published>2017-04-30T17:20:55.254Z</published>
-    <updated>2017-05-07T17:35:32.632Z</updated>
+    <updated>2017-06-01T07:10:21.204Z</updated>
     
     <summary type="html">
     
@@ -158,6 +181,33 @@
   </entry>
   
   <entry>
+    <title>Mapping list type to custom type in TDS code Generation</title>
+    <link href="http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/"/>
+    <id>http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/</id>
+    <published>2017-02-18T13:52:39.083Z</published>
+    <updated>2017-06-01T07:11:28.716Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool&quot;&gt;&lt;a href=&quot;#TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool&quot; class=&quot;headerlink&quot; title=&quot;TDS is very powerful and efficient with many benefits that come along with the tool.&quot;&gt;&lt;/a&gt;TDS is very powerful and efficient with many benefits that come along with the tool.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Easy sharing of the items updates across the team&lt;/li&gt;
+&lt;li&gt;Easy updating of the items&lt;/li&gt;
+&lt;li&gt;Code Generation, classes that are comparable to sitecore items&lt;br&gt;…these are to name a few.
+    
+    </summary>
+    
+      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
+    
+    
+      <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
+    
+      <category term="Sitecore ORM" scheme="http://suhasshiv.com/tags/Sitecore-ORM/"/>
+    
+      <category term="TDS" scheme="http://suhasshiv.com/tags/TDS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Sitecore Campaign</title>
     <link href="http://suhasshiv.com/2017/02/18/Sitecore-Campaigns/"/>
     <id>http://suhasshiv.com/2017/02/18/Sitecore-Campaigns/</id>
@@ -184,33 +234,6 @@
     
     
       <category term="Campaign" scheme="http://suhasshiv.com/tags/Campaign/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mapping list type to custom type in TDS code Generation</title>
-    <link href="http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/"/>
-    <id>http://suhasshiv.com/2017/02/18/TDS-Glassmapper-CustomTypes/</id>
-    <published>2017-02-18T12:24:47.247Z</published>
-    <updated>2017-02-18T12:31:09.479Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool&quot;&gt;&lt;a href=&quot;#TDS-is-very-powerful-and-efficient-with-many-benefits-that-come-along-with-the-tool&quot; class=&quot;headerlink&quot; title=&quot;TDS is very powerful and efficient with many benefits that come along with the tool.&quot;&gt;&lt;/a&gt;TDS is very powerful and efficient with many benefits that come along with the tool.&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Easy sharing of the items updates across the team&lt;/li&gt;
-&lt;li&gt;Easy updating of the items&lt;/li&gt;
-&lt;li&gt;Code Generation, classes that are comparable to sitecore items&lt;br&gt;…these are to name a few.
-    
-    </summary>
-    
-      <category term="Weekend Walkthrough" scheme="http://suhasshiv.com/categories/Weekend-Walkthrough/"/>
-    
-    
-      <category term="Glassmapper" scheme="http://suhasshiv.com/tags/Glassmapper/"/>
-    
-      <category term="Sitecore ORM" scheme="http://suhasshiv.com/tags/Sitecore-ORM/"/>
-    
-      <category term="TDS" scheme="http://suhasshiv.com/tags/TDS/"/>
     
   </entry>
   

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Publish second level reference items - Sitecore | Suhas Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Sitecore Publish" />
+  
+  
+    <meta name="google-site-verification" content="2IBIvjuCvN4LZZqRAw_zCzbTf0wmK80J_1cTXei6180" />
+  
+  
+  
+  <meta name="description" content="Sitecore publishing modes
+Republish – This mode will publish every item, even thought no change exists on the item. This is generally used when publishing a new site first time. This is most time cons">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Publish second level reference items - Sitecore">
+<meta property="og:url" content="http://suhasshiv.com/2017/05/14/Publish-Second-Level-Items/index.html">
+<meta property="og:site_name" content="Suhas Blog">
+<meta property="og:description" content="Sitecore publishing modes
+Republish – This mode will publish every item, even thought no change exists on the item. This is generally used when publishing a new site first time. This is most time cons">
+<meta property="og:updated_time" content="2017-06-01T07:08:53.879Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Publish second level reference items - Sitecore">
+<meta name="twitter:description" content="Sitecore publishing modes
+Republish – This mode will publish every item, even thought no change exists on the item. This is generally used when publishing a new site first time. This is most time cons">
+<meta property="fb:app_id" content="246516525800444">
+  
+    <link rel="alternate" href="/rss.xml" title="Suhas Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/suhas-favicon-red.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="50px" height="50px" alt="Hike News" src=" /css/images/Suhas-logo-red.png">
+                Suhas Blog
+              </a>
+            
+          </h1>
+
+          
+            <div class="site-description">My Experiments with Tech Blogs</div>
+                   
+
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/contact">contact</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+
+
+  <div id="container">
+    <div id="wrap">
+
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Publish-Second-Level-Items" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Publish second level reference items - Sitecore
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/05/14/Publish-Second-Level-Items/" class="article-date">
+	  <time datetime="2017-05-14T05:35:56.000Z" itemprop="datePublished">May 14, 2017</time>
+	</a>
+	<div
+	class="fb-like"
+	data-layout="button"
+	data-action="like"
+	data-size="small"
+	data-show-faces="false"
+	data-share="false"></div>
+	<!--<div
+ class="fb-like"
+ data-share="false"
+ data-width="450"
+ data-show-faces="false">
+ </div>-->
+	<div class="addthis_inline_share_toolbox"></div>
+<!--<script type="IN/Share" data-counter="right"></script>
+<a class="twitter-share-button"  href="https://twitter.com/intent/tweet">Tweet</a>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>-->
+
+
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Sitecore-publishing-modes"><a href="#Sitecore-publishing-modes" class="headerlink" title="Sitecore publishing modes"></a>Sitecore publishing modes</h2><ul>
+<li>Republish – This mode will publish every item, even thought no change exists on the item. This is generally used when publishing a new site first time. This is most time consuming publishing method since it publishes all items.</li>
+<li>Smart Publish - This mode, as the name suggest is smart enough to compare item by item in the master database with web database. Sitecore maintains revision number for each item which gets changed whenever the item gets updated. By comparing the revision number between the master and web database, it will create a list of updated items changes and will publish only those items which has updates/created/deleted. Though item by item comparison happens, it is way more faster than republish method.</li>
+<li>Incremental Publish - In this mode, at any point of time if an item is updated, it is added to the publishing queue. Changes made through the Sitecore user interface and programmatically are both added into publishing queue and only those are considered for publishing. This mode of publishing is hence the fastest.<a id="more"></a>
+</li>
+</ul>
+<h3 id="Problem"><a href="#Problem" class="headerlink" title="Problem:"></a>Problem:</h3><p>Now that we have learnt about different modes of sitecore publishing. Sitecore does have its own limitations of publishing the items. Sitecore will publish only the first level reference items. Let’s try understanding the problem with an example.</p>
+<p>A content has a presentation with a datasource passed to it. The datasource has a references(multilist/treelist/droplink etc) to other items which will be displayed on from the datasource item. Now, let’s do publish on the page item and select Publish related items. Ideally, we expect all the items referenced in the item will be published - including the datasource item and also the items referenced(multilist/treelist/droplink etc) in the datasource item. But, Sitecore doesn’t publish second level reference. Since publishing references of references can lead publishing huge number of items, to prevent this Sitecore restricts to publish only first level reference item.</p>
+<p>But you may want to override this behavior. Can you do it?<br>Yes, of course!!! Why not!!!<br>But how?<br>Let’s look at the solution below</p>
+<h3 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h3><p>Simple one line answer is - customize the pipelines. Let’s see how to do it.</p>
+<ul>
+<li><p>Create your custom processor based on the <strong>Sitecore.Publishing.Pipelines.GetItemReferences.AddItemLinkReferences</strong>.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> System;</div><div class="line"><span class="keyword">using</span> System.Collections.Generic;</div><div class="line"><span class="keyword">using</span> System.Linq;</div><div class="line"><span class="keyword">using</span> System.Text;</div><div class="line"><span class="keyword">using</span> Sitecore;</div><div class="line"><span class="keyword">using</span> Sitecore.Data;</div><div class="line"><span class="keyword">using</span> Sitecore.Data.Comparers;</div><div class="line"><span class="keyword">using</span> Sitecore.Data.Items;</div><div class="line"><span class="keyword">using</span> Sitecore.Diagnostics;</div><div class="line"><span class="keyword">using</span> Sitecore.Links;</div><div class="line"><span class="keyword">using</span> Sitecore.Publishing;</div><div class="line"><span class="keyword">using</span> Sitecore.Publishing.Pipelines.GetItemReferences;</div><div class="line"><span class="keyword">using</span> Sitecore.Publishing.Pipelines.Publish;</div><div class="line"><span class="keyword">using</span> Sitecore.Publishing.Pipelines.PublishItem;</div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">MyProject.SitecoreProcessors</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">AddItemLinkReferences</span> : <span class="title">GetItemReferencesProcessor</span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//Support</span></div><div class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">readonly</span> ID RenderingsFieldId = <span class="keyword">new</span> ID(<span class="string">"&#123;F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E&#125;"</span>);</div><div class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">readonly</span> ID FinalRenderingsFieldId = <span class="keyword">new</span> ID(<span class="string">"&#123;04BF00DB-F5FB-41F7-8AB7-22408372A981&#125;"</span>);</div><div class="line"></div><div class="line">        <span class="comment">//Support</span></div><div class="line">        <span class="keyword">private</span> <span class="keyword">struct</span> ReferenceInfo</div><div class="line">        &#123;</div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="title">ReferenceInfo</span>(<span class="params">Item referencedItem, ID sourceFieldId</span>)</span></div><div class="line">                : <span class="title">this</span>(<span class="params"></span>)</div><div class="line">            &#123;</div><div class="line">                ReferencedItem = referencedItem;</div><div class="line">                SourceFieldId = sourceFieldId;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            <span class="keyword">public</span> Item ReferencedItem &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</div><div class="line">            <span class="keyword">public</span> ID SourceFieldId &#123; <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> List&lt;Item&gt; <span class="title">GetItemReferences</span>(<span class="params">PublishItemContext context</span>)</span></div><div class="line">        &#123;</div><div class="line">            Assert.ArgumentNotNull((<span class="keyword">object</span>) context, <span class="string">"context"</span>);</div><div class="line">            List&lt;Item&gt; list = <span class="keyword">new</span> List&lt;Item&gt;();</div><div class="line">            <span class="keyword">if</span> (context.PublishOptions.Mode != PublishMode.SingleItem)</div><div class="line">                <span class="keyword">return</span> list;</div><div class="line">            <span class="keyword">switch</span> (context.Action)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">case</span> PublishAction.PublishSharedFields:</div><div class="line">                    Item sourceItem = context.PublishHelper.GetSourceItem(context.ItemId);</div><div class="line">                    <span class="keyword">if</span> (sourceItem == <span class="literal">null</span>)</div><div class="line">                        <span class="keyword">return</span> list;</div><div class="line">                    list.AddRange(<span class="keyword">this</span>.GetReferences(sourceItem, <span class="literal">true</span>, <span class="keyword">new</span> HashSet&lt;ID&gt;()));</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">case</span> PublishAction.PublishVersion:</div><div class="line">                    Item versionToPublish = context.VersionToPublish;</div><div class="line">                    <span class="keyword">if</span> (versionToPublish == <span class="literal">null</span>)</div><div class="line">                        <span class="keyword">return</span> list;</div><div class="line">                    list.AddRange(<span class="keyword">this</span>.GetReferences(versionToPublish, <span class="literal">false</span>, <span class="keyword">new</span> HashSet&lt;ID&gt;()));</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">default</span>:</div><div class="line">                    <span class="keyword">return</span> list;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> list;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">private</span> IEnumerable&lt;Item&gt; <span class="title">GetReferences</span>(<span class="params">Item item, <span class="keyword">bool</span> sharedOnly, HashSet&lt;ID&gt; processedItems</span>)</span></div><div class="line">        &#123;</div><div class="line">            Assert.ArgumentNotNull(item, <span class="string">"item"</span>);</div><div class="line"></div><div class="line">            processedItems.Add(item.ID);</div><div class="line">            List&lt;Item&gt; resultReferences = <span class="keyword">new</span> List&lt;Item&gt;();</div><div class="line">            ItemLink[] references =</div><div class="line">                item.Links.GetValidLinks()</div><div class="line">                    .Where(</div><div class="line">                        link =&gt; item.Database.Name.Equals(link.TargetDatabaseName, StringComparison.OrdinalIgnoreCase))</div><div class="line">                    .ToArray();</div><div class="line"></div><div class="line">            <span class="keyword">if</span> (sharedOnly)</div><div class="line">                references = references.Where(reference =&gt;</div><div class="line">                &#123;</div><div class="line">                    Item sourceItem = reference.GetSourceItem();</div><div class="line">                    <span class="keyword">if</span> (sourceItem == <span class="literal">null</span>)</div><div class="line">                        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">                    <span class="keyword">if</span> (!ID.IsNullOrEmpty(reference.SourceFieldID))</div><div class="line">                        <span class="keyword">return</span> sourceItem.Fields[reference.SourceFieldID].Shared;</div><div class="line">                    <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">                &#125;).ToArray();</div><div class="line"></div><div class="line"></div><div class="line">            <span class="keyword">foreach</span> (</div><div class="line">                <span class="keyword">var</span> refItem <span class="keyword">in</span></div><div class="line">                references.Select(link =&gt; <span class="keyword">new</span> ReferenceInfo(link.GetTargetItem(), link.SourceFieldID))</div><div class="line">                    .Where(refInfo =&gt; refInfo.ReferencedItem != <span class="literal">null</span>))</div><div class="line">            &#123;</div><div class="line">                <span class="comment">//Support. Here we recursively add reference if wasn't added before and if referenced by the __Renderings field.</span></div><div class="line">                <span class="keyword">if</span> ((refItem.SourceFieldId == RenderingsFieldId || refItem.SourceFieldId == FinalRenderingsFieldId) &amp;&amp; !processedItems.Contains(refItem.ReferencedItem.ID))</div><div class="line">                &#123;</div><div class="line">                    resultReferences.AddRange(<span class="keyword">this</span>.GetReferences(refItem.ReferencedItem, sharedOnly, processedItems));</div><div class="line">                &#125;</div><div class="line"></div><div class="line">                resultReferences.AddRange(PublishQueue.GetParents(refItem.ReferencedItem));</div><div class="line">                resultReferences.Add(refItem.ReferencedItem);</div><div class="line">                resultReferences.AddRange(GetLinkedMediaItems(refItem.ReferencedItem));</div><div class="line">                resultReferences.AddRange(GetLinkedItems(refItem.ReferencedItem));</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            <span class="keyword">return</span> resultReferences.Distinct(<span class="keyword">new</span> ItemIdComparer());</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">protected</span> <span class="keyword">virtual</span> List&lt;Item&gt; <span class="title">GetLinkedMediaItems</span>(<span class="params">Item item</span>)</span></div><div class="line">        &#123;</div><div class="line">            Assert.ArgumentNotNull(item, <span class="string">"item"</span>);</div><div class="line"></div><div class="line">            List&lt;Item&gt; mediaList = <span class="keyword">new</span> List&lt;Item&gt;();</div><div class="line">            ItemLink[] itemLinkArray = item.Links.GetValidLinks()</div><div class="line">              .Where(link =&gt; item.Database.Name.Equals(link.TargetDatabaseName, StringComparison.OrdinalIgnoreCase))</div><div class="line">              .ToArray();</div><div class="line">            <span class="keyword">foreach</span> (ItemLink link <span class="keyword">in</span> itemLinkArray)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">try</span></div><div class="line">                &#123;</div><div class="line">                    Item target = link.GetTargetItem();</div><div class="line">                    <span class="keyword">if</span> (target == <span class="literal">null</span> || !target.Paths.IsMediaItem)</div><div class="line">                        <span class="keyword">continue</span>;</div><div class="line">                    <span class="comment">// add parent media items or folders</span></div><div class="line">                    Item parent = target.Parent;</div><div class="line">                    <span class="keyword">while</span> (parent != <span class="literal">null</span> &amp;&amp; parent.ID != ItemIDs.MediaLibraryRoot)</div><div class="line">                    &#123;</div><div class="line">                        mediaList.Insert(<span class="number">0</span>, parent);</div><div class="line">                        parent = parent.Parent;</div><div class="line">                    &#125;</div><div class="line">                    mediaList.Add(target);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">catch</span> (Exception ex)</div><div class="line">                &#123;</div><div class="line">                    Log.Error(<span class="string">"Error publishing reference link related media items"</span>, ex, <span class="keyword">typeof</span>(AddItemLinkReferences));</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> mediaList;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">protected</span> <span class="keyword">virtual</span> List&lt;Item&gt; <span class="title">GetLinkedItems</span>(<span class="params">Item item</span>)</span></div><div class="line">        &#123;</div><div class="line">            Assert.ArgumentNotNull(item, <span class="string">"item"</span>);</div><div class="line"></div><div class="line">            List&lt;Item&gt; linkedItemList = <span class="keyword">new</span> List&lt;Item&gt;();</div><div class="line">            ItemLink[] itemLinkArray = item.Links.GetValidLinks()</div><div class="line">              .Where(link =&gt; item.Database.Name.Equals(link.TargetDatabaseName, StringComparison.OrdinalIgnoreCase))</div><div class="line">              .ToArray();</div><div class="line">            <span class="keyword">foreach</span> (ItemLink link <span class="keyword">in</span> itemLinkArray)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">try</span></div><div class="line">                &#123;</div><div class="line">                    Item target = link.GetTargetItem();</div><div class="line">                    <span class="keyword">if</span> (target == <span class="literal">null</span> || target.Paths.IsMediaItem)</div><div class="line">                        <span class="keyword">continue</span>;</div><div class="line">                    <span class="comment">// add parent media items or folders</span></div><div class="line">                    Item parent = target.Parent;</div><div class="line">                    <span class="keyword">while</span> (parent != <span class="literal">null</span> &amp;&amp; parent.ID != ItemIDs.ContentRoot)</div><div class="line">                    &#123;</div><div class="line">                        linkedItemList.Insert(<span class="number">0</span>, parent);</div><div class="line">                        parent = parent.Parent;</div><div class="line">                    &#125;</div><div class="line">                    linkedItemList.Add(target);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">catch</span> (Exception ex)</div><div class="line">                &#123;</div><div class="line">                    Log.Error(<span class="string">"Error publishing reference link related items"</span>, ex, <span class="keyword">typeof</span>(AddItemLinkReferences));</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> linkedItemList;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Replace predefined processor in <strong>Sitecore.config</strong> the custom processor just created. Looking for the below lines and update accordingly</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">getItemReferences</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">processor</span> <span class="attr">type</span>=<span class="string">"Sitecore.Publishing.Pipelines.GetItemReferences.AddItemCloneReferences, Sitecore.Kernel"</span> /&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">processor</span> <span class="attr">type</span>=<span class="string">"Sitecore.Publishing.Pipelines.GetItemReferences.AddFileDropAreaMediaReferences, Sitecore.Kernel"</span> /&gt;</span></div><div class="line">      <span class="comment">&lt;!--Updated custom processor line to the included. Below default processor to be commented out --&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">processor</span> <span class="attr">type</span>=<span class="string">"MyProject.SitecoreProcessors.AddItemLinkReferences, MyProject.SitecoreProcessors"</span>/&gt;</span></div><div class="line">      <span class="comment">&lt;!--&lt;processor type="Sitecore.Publishing.Pipelines.GetItemReferences.AddItemLinkReferences, Sitecore.Kernel" /&gt;--&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">processor</span> <span class="attr">type</span>=<span class="string">"Sitecore.Publishing.Pipelines.GetItemReferences.AddItemAliasReferences, Sitecore.Kernel"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">getItemReferences</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>Please feel free to drop your suggestions, questions, comments, or request a topic for a post on <a href="http://suhasshiv/contact" target="_blank" rel="external">Contact</a> page.</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Weekend-Walkthrough/">Weekend Walkthrough</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sitecore-Publish/">Sitecore Publish</a></li></ul>
+
+      
+        
+          
+	<section id="comments" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'suhasshiv';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+        
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/05/07/Searchable-Field-Coveo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Coveo Searchable Field</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Sitecore-publishing-modes"><span class="nav-number">1.</span> <span class="nav-text">Sitecore publishing modes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem"><span class="nav-number">1.1.</span> <span class="nav-text">Problem:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solution"><span class="nav-number">1.2.</span> <span class="nav-text">Solution:</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2017 Suhas Blog All Rights Reserved.
+      </div>
+      <div class="site-credit">
+        Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="/contact" class="mobile-nav-link">Contact</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-90935450-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+<!-- facebook_sdk -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{{ theme.facebook_sdk.app_id }}',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- End facebook_sdk -->
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-589dad0d37a15437"></script> 
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
